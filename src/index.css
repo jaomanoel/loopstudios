@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100;300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+@layer components {
+  .header-a {
+    @apply md:text-15 text-[32px] font-thin flex flex-col items-center uppercase md:capitalize md:font-bold tracking-widest after:content-[''] after:mt-2 after:w-16 after:h-1 after:rounded-md hover:after:bg-white;
+  }
+
+  .footer-a {
+    @apply text-[16px] font-semibold font-josefin md:text-[1.4rem] md:font-thin flex flex-col items-center capitalize md:capitalize tracking-widest after:content-[''] after:mt-2 after:w-16 after:h-1 after:rounded-md hover:after:bg-white;
+  }
+
+  .container-padding {
+    @apply p-8 md:px-12 md:py-16
+  }
+}
